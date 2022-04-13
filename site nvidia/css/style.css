@@ -38,7 +38,7 @@ header{
     font-size: 25px;
     text-decoration: none;
     color: black;
-    margin:30px 80px;
+    margin:30px 50px;
 }
 
 .band{
@@ -129,12 +129,16 @@ aside i{
     
 }
 .triangle{
-    color: rgb(90, 131, 30);
-
+    color:rgb(90, 131, 30) ;
     position: absolute;
-    top:1200px;
+    top:1440px;
+    left:600px;
 }
-/*********************** article ************************/
+.triangle .fa-solid
+{
+    color:rgb(90, 131, 30) ;
+}
+    /*********************** article ************************/
 article{
     width: 70%;
     text-align:justify;
@@ -173,7 +177,6 @@ footer{
 /* newsletter */
 
 .newsletter{
-    background-color: aqua;
     width:100%;
     
 }
@@ -184,7 +187,7 @@ footer{
 .form input{
     display: block;
     height: 45px;
-    width: 280px;
+    width: 250px;
     margin: 5px;
 }
 
