@@ -46,8 +46,8 @@ header figure{
 header nav{
    width:85%; 
    display:flex;
-   justify-content: space-around;
-   align-items: flex-end;
+   flex-direction: column;
+   align-items: center;
     padding:2%;
 }
 
@@ -109,17 +109,19 @@ header nav a{
 main{
     width:100%;
     margin-top: 20px;
-    border-bottom:5px solid rgb(90, 131, 30) ;
+    border-bottom: 2px solid rgb(90, 131, 30) ;
     position: relative;
+
 }
 main section{
     display: flex;
+    flex-direction: column;
 }
 /*********************** article ************************/
 article{  
     width: 100%;
     text-align:justify;
-    padding-right:40px;   
+    padding-right: 0;   
 }
 .titre{
     display: flex;
@@ -127,11 +129,12 @@ article{
 
 .titre h2{
     width: 93%;
-    margin-left:2%;
+    /* margin-left:2%; */
+    font-size: 1.2em;
     
 }
 article figure{
-    width:5%;
+    width:6%;
 }
 article img{
     border: solid black 2px;
@@ -140,13 +143,16 @@ article img{
 
 /********************** aside ***********************/
 aside{   
-    width: 30%;
+    width: 100%;
     background-color: rgb(90, 131, 30);
     color: white;
     text-align:center;
     padding:2%;
 }
-
+aside img{
+    margin: 20px;
+    width:50%;
+}
 .lien_appli{
     display: flex;
     margin-top: 10%;
@@ -158,9 +164,11 @@ aside i{
     font-size: 1.8em;
     
 }
-/* fleche */
+
  #fleche
 {   font-size: 50px;
+    margin-top:0;
+    padding-top:0px;
     color:rgb(90, 131, 30) ;
     position: absolute;
     bottom: -33px;
@@ -169,17 +177,23 @@ aside i{
 .fleche{
     text-align:center;
     width:100%;
-    bottom: 0;
+    height:20px;
 }
     
 /********************* footer **********************/
 footer{
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 footer section{
-    width: 30%;
+    width: 100%;
     margin: 1%;
+}
+
+/***** newsletter *****/
+.newsletter{
+    margin: 25px;
 }
 
 input:first-child{
@@ -196,23 +210,25 @@ input{
     width: 40%;
     color: white;
     font-size: 20px;
+    margin-bottom:3%;
  }
 
-footer .galerie figure img{
+/***** galerie image *****/
+ footer .galerie figure img{
     height:100%;
     width:23%;
     object-fit: cover;
     object-position: 50% 50%;
-
 }
 
 footer .galerie figure{
-    margin-top: 25px;
     width:100%;
     height:100px;
     display: flex;
 }
 
+
+/***** partenaire *****/
 footer .partenaires figure img{
     height:100%;
     width:23%;
